@@ -120,23 +120,23 @@ if(isset($_GET['prvi'])){
      $stmt = $db->prepare($query) ;
      $stmt->execute();
     }else if($kvadratic=='trecakolona' && $vrjednosttd=='6' ){
-        $query="UPDATE  `timegrid` SET kolona2='$vrjednostinputanovi' where id='$vrjednosttd' ";
+        $query="UPDATE  `timegrid` SET kolona3='$vrjednostinputanovi' where id='$vrjednosttd' ";
         $stmt = $db->prepare($query) ;
         $stmt->execute();
     }else if($kvadratic=='trecakolona' && $vrjednosttd=='7' ){
-        $query="UPDATE  `timegrid` SET kolona2='$vrjednostinputanovi' where id='$vrjednosttd' ";
+        $query="UPDATE  `timegrid` SET kolona3='$vrjednostinputanovi' where id='$vrjednosttd' ";
         $stmt = $db->prepare($query) ;
         $stmt->execute();
     }else if($kvadratic=='trecakolona' && $vrjednosttd=='8' ){
-        $query="UPDATE  `timegrid` SET kolona2='$vrjednostinputanovi' where id='$vrjednosttd' ";
+        $query="UPDATE  `timegrid` SET kolona3='$vrjednostinputanovi' where id='$vrjednosttd' ";
         $stmt = $db->prepare($query) ;
         $stmt->execute();
     }else if($kvadratic=='trecakolona' && $vrjednosttd=='9' ){
-        $query="UPDATE  `timegrid` SET kolona2='$vrjednostinputanovi' where id='$vrjednosttd' ";
+        $query="UPDATE  `timegrid` SET kolona3='$vrjednostinputanovi' where id='$vrjednosttd' ";
         $stmt = $db->prepare($query) ;
         $stmt->execute();
     }else if($kvadratic=='trecakolona' && $vrjednosttd=='10' ){
-        $query="UPDATE  `timegrid` SET kolona2='$vrjednostinputanovi' where id='$vrjednosttd' ";
+        $query="UPDATE  `timegrid` SET kolona3='$vrjednostinputanovi' where id='$vrjednosttd' ";
         $stmt = $db->prepare($query) ;
         $stmt->execute();
  }else if($kvadratic=='cetvrtakolona' && $vrjednosttd=='1' ){
