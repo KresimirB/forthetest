@@ -7,7 +7,7 @@
   margin-top:2px;
 }
 table tr{
-  height:40px;
+  height:100px;
 }
 #div1, #div2 {
   float: left;
@@ -108,28 +108,28 @@ echo '
 if($kolona1=='' && $kolona6==''){
 echo '<td id="prvakolona" ondrop="drop(event)" ondragover="allowDrop(event)"></td>';
 }else{
-echo '<td id="prvakolona" ondrop="drop(event)" ondragover="allowDrop(event)"><input type="text" id="unutra" name="'.$id.'" class="form form-control alert-primary" value="'.$kolona1.'" draggable="true" ondragstart="drag(event)"/>';if($kolona6!=''){echo '<input type="text" id="unutra1" name="'.$id.'" class="form form-control alert-primary" value="'.$kolona6.'" draggable="true" ondragstart="drag(event)"/>';}echo'</td>';
+echo '<td id="prvakolona" ondrop="drop(event)" ondragover="allowDrop(event)"><input type="text" readonly id="unutra" name="'.$id.'" class="form form-control alert-primary" value="'.$kolona1.'" draggable="true" ondragstart="drag(event)"/>';if($kolona6!=''){echo '<input type="text" readonly id="unutra1" name="'.$id.'" class="form form-control alert-primary" value="'.$kolona6.'" draggable="true" ondragstart="drag(event)"/>';}echo'</td>';
 
 }
 if($kolona2=='' && $kolona7==''){
   echo '<td id="drugakolona" ondrop="drop(event)" ondragover="allowDrop(event)"></td>';
   }else{
-    echo '<td id="drugakolona" ondrop="drop(event)" ondragover="allowDrop(event)"><input type="text" id="unutra" name="'.$id.'" class="form form-control alert-primary" value="'.$kolona2.'" draggable="true" ondragstart="drag(event)"/>';if($kolona7!=''){echo '<input type="text" id="unutra1" name="'.$id.'" class="form form-control alert-primary" value="'.$kolona7.'" draggable="true" ondragstart="drag(event)"/>';}echo'</td>';
+    echo '<td id="drugakolona" ondrop="drop(event)" ondragover="allowDrop(event)"><input type="text" readonly id="unutra" name="'.$id.'" class="form form-control alert-primary" value="'.$kolona2.'" draggable="true" ondragstart="drag(event)"/>';if($kolona7!=''){echo '<input type="text" readonly id="unutra1" name="'.$id.'" class="form form-control alert-primary" value="'.$kolona7.'" draggable="true" ondragstart="drag(event)"/>';}echo'</td>';
   }
   if($kolona3=='' && $kolona8==''){
     echo '<td id="trecakolona" ondrop="drop(event)" ondragover="allowDrop(event)"></td>';
     }else{
-      echo '<td id="trecakolona" ondrop="drop(event)" ondragover="allowDrop(event)"><input type="text" id="unutra" name="'.$id.'" class="form form-control alert-primary" value="'.$kolona3.'" draggable="true" ondragstart="drag(event)"/>';if($kolona8!=''){echo '<input type="text" id="unutra1" name="'.$id.'" class="form form-control alert-primary" value="'.$kolona8.'" draggable="true" ondragstart="drag(event)"/>';}echo'</td>';
+      echo '<td id="trecakolona" ondrop="drop(event)" ondragover="allowDrop(event)"><input type="text" readonly id="unutra" name="'.$id.'" class="form form-control alert-primary" value="'.$kolona3.'" draggable="true" ondragstart="drag(event)"/>';if($kolona8!=''){echo '<input type="text" readonly id="unutra1" name="'.$id.'" class="form form-control alert-primary" value="'.$kolona8.'" draggable="true" ondragstart="drag(event)"/>';}echo'</td>';
     }
     if($kolona4=='' && $kolona9==''){
       echo '<td id="cetvrtakolona" ondrop="drop(event)" ondragover="allowDrop(event)"></td>';
       }else{
-        echo '<td id="cetvrtakolona" ondrop="drop(event)" ondragover="allowDrop(event)"><input type="text" id="unutra" name="'.$id.'" class="form form-control alert-primary" value="'.$kolona4.'" draggable="true" ondragstart="drag(event)"/>';if($kolona9!=''){echo '<input type="text" id="unutra1" name="'.$id.'"  class="form form-control alert-primary" value="'.$kolona9.'" draggable="true" ondragstart="drag(event)"/>';}echo'</td>';
+        echo '<td id="cetvrtakolona" ondrop="drop(event)" ondragover="allowDrop(event)"><input type="text" readonly id="unutra" name="'.$id.'" class="form form-control alert-primary" value="'.$kolona4.'" draggable="true" ondragstart="drag(event)"/>';if($kolona9!=''){echo '<input type="text" readonly id="unutra1" name="'.$id.'"  class="form form-control alert-primary" value="'.$kolona9.'" draggable="true" ondragstart="drag(event)"/>';}echo'</td>';
       }
       if($kolona5=='' && $kolona10==''){
         echo '<td id="petakolona" ondrop="drop(event)" ondragover="allowDrop(event)"></td>';
         }else{
-          echo '<td id="petakolona" ondrop="drop(event)" ondragover="allowDrop(event)"><input type="text" id="unutra" name="'.$id.'" class="form form-control alert-primary" value="'.$kolona5.'" draggable="true" ondragstart="drag(event)"/>';if($kolona10!=''){echo '<input type="text" id="unutra1" name="'.$id.'" class="form form-control alert-primary" value="'.$kolona10.'" draggable="true" ondragstart="drag(event)"/>';}echo'</td>';
+          echo '<td id="petakolona" ondrop="drop(event)" ondragover="allowDrop(event)"><input type="text" readonly id="unutra" name="'.$id.'" class="form form-control alert-primary" value="'.$kolona5.'" draggable="true" ondragstart="drag(event)"/>';if($kolona10!=''){echo '<input type="text" readonly id="unutra1" name="'.$id.'" class="form form-control alert-primary" value="'.$kolona10.'" draggable="true" ondragstart="drag(event)"/>';}echo'</td>';
         }
 
 
@@ -225,7 +225,10 @@ if(brojinputa==1){
               }
        
        });
+      
+      window.location.href;
       location.reload();
+      
      }else{
       console.log('drugi');
        $.ajax('test.php?drugi',{
@@ -239,7 +242,10 @@ if(brojinputa==1){
             }
        
       });
+     
+     window.location.href;
      location.reload();
+     
     }
 //   $.ajax('test1.php',{
 //         'method':'POST',
@@ -615,7 +621,7 @@ $("table tr td input").on('dragstart', function(event){
        
        }); 
        } 
-       //location.reload();
+       location.reload();
   });
   <?php }?>
 
